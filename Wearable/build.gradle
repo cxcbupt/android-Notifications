@@ -1,8 +1,11 @@
 
 buildscript {
     repositories {
-        jcenter()
-        google()
+        maven {
+            url "http://maven.oa.com/nexus/content/groups/androidbuild"
+        }
+//        jcenter()
+//        google()
     }
 
     dependencies {
@@ -13,8 +16,11 @@ buildscript {
 apply plugin: 'com.android.application'
 
 repositories {
-    jcenter()
-    google()
+    maven {
+        url "http://maven.oa.com/nexus/content/groups/androidbuild"
+    }
+//    jcenter()
+//    google()
 }
 
 dependencies {
